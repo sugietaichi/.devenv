@@ -24,4 +24,5 @@ RUN mkdir -p /root/.config/nvim
 COPY ./dotfiles/.config/nvim/init.vim /root/.config/nvim/init.vim
 RUN vim +PlugInstall +q +q
 RUN vim +GoInstallBinaries +q
+RUN vim +CocInstall coc-json coc-tsserver
 
