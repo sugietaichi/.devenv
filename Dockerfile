@@ -1,12 +1,15 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update \ 
+  && apt-get install -y sudo \ 
+  && sudo apt-get install -y \
   curl \
   git \
   vim \
   neovim \
   nodejs \
   npm \
+  golang-go \
   && rm -rf /var/lib/apt/lists/*
 
 ############
