@@ -23,6 +23,5 @@ RUN curl -fLo /root/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 RUN mkdir -p /root/.config/nvim
 COPY ./dotfiles/.config/nvim/init.vim /root/.config/nvim/init.vim
 RUN vim +PlugInstall +q +q
+#RUN vim +CocInstall coc-tsserver +q
 RUN vim +GoInstallBinaries +q
-RUN vim +CocInstall coc-json
-RUN vim +CocInstall coc-tsserver
