@@ -17,3 +17,6 @@ RUN mkdir -p /root/.config/nvim
 COPY ./dotfiles/.config/nvim/init.vim /root/.config/nvim/init.vim
 RUN vim +PlugInstall +q +q
 RUN vim +GoInstallBinaries +q
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN source $HOME/.cargo/env
