@@ -20,12 +20,7 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-Plug 'prabirshrestha/asyncomplete.vim'      " Auto complete
-Plug 'prabirshrestha/vim-lsp'               " LSP
-Plug 'prabirshrestha/async.vim'             " Execute in asynchronous
-Plug 'prabirshrestha/asyncomplete-lsp.vim'  " Add LSP support
-Plug 'mattn/vim-lsp-settings'               " Auto configure vim-lsp
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 
