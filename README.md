@@ -1,4 +1,4 @@
-# sugienv
+# devenv
 Setting up a development environment with docker.
 
 ### Usage
